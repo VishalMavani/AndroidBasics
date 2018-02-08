@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:text="Data goes here..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="116dp"
+        android:id="@+id/tvDisplayData" />
+
+    <Button
+        android:text="Save Preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="69dp"
+        android:id="@+id/bSaveExternal"
+        android:layout_below="@+id/tvDisplayData"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:text="Load Preferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="58dp"
+        android:id="@+id/bLoadPrefs"
+        android:layout_below="@+id/bSaveExternal"
+        android:layout_alignRight="@+id/bSaveExternal"
+        android:layout_alignEnd="@+id/bSaveExternal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/etSavePrefs"
+        android:hint="Enter Data to Store as Preferences..." />
+</RelativeLayout>

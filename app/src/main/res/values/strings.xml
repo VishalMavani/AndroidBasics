@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">The New Boston</string>
+    <string name="title_activity_recycler_view_demo">RecyclerViewDemo</string>
+</resources>

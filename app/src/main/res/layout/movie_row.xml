@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:clickable="false"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="false"
+    android:focusableInTouchMode="false">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="120dp"
+                android:layout_height="160dp"
+                android:id="@+id/ivMovieImage" />
+                <!--android:src="@drawable/avengers"-->
+
+            <ProgressBar
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/pbMovieImage" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Movie"
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/tvMovie" />
+
+            <TextView
+                android:text="TagLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTagLine"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvYear"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDuration"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_weight="1" />
+
+            <TextView
+                android:text="Director"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvDirector"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/rbRating"
+        android:numStars="5" />
+
+    <TextView
+        android:text="Cast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvCast"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:text="Story"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvStory" />
+</LinearLayout>
